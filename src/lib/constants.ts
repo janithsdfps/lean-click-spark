@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "94771234567";
+export const WHATSAPP_NUMBER = "9477XXXXXXX";
 
 export const heroImages = [
   "https://res.cloudinary.com/da0sfjp8x/image/upload/v1754893327/WhatsApp_Image_2025-06-25_at_15.06.04_c76dea8f_ljps2i.jpg",
