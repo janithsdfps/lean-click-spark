@@ -1,7 +1,9 @@
-import { cakes } from "@/lib/constants";
+import { useCakes } from "@/hooks/use-cakes";
 import CakeCard from "./CakeCard";
 
 const Gallery = () => {
+  const { data: cakes = [], isLoading } = useCakes();
+
   return (
     <section id="gallery" className="py-20 bg-secondary">
       <div className="container mx-auto">
@@ -13,12 +15,22 @@ const Gallery = () => {
             A showcase of our most beloved creations, perfect for any occasion.
           </p>
         </div>
-        
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {cakes.map((cake) => (
-            <CakeCard key={cake.id} {...cake} />
-          ))}
-        </div>
+
+        {isLoading ? (
+          <p className="text-center text-muted-foreground">Loading cakes...</p>
+        ) : (
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {cakes.map((cake) => (
+              <CakeCard
+                key={cake.id}
+                name={cake.name}
+                price={cake.price}
+                image={cake.image_url ?? "/placeholder.svg"}
+                description={cake.description ?? undefined}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
