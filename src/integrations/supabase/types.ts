@@ -16,6 +16,7 @@ export type Database = {
     Tables: {
       cakes: {
         Row: {
+          category: string
           created_at: string
           description: string | null
           featured: boolean
@@ -27,6 +28,7 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          category?: string
           created_at?: string
           description?: string | null
           featured?: boolean
@@ -38,6 +40,7 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          category?: string
           created_at?: string
           description?: string | null
           featured?: boolean

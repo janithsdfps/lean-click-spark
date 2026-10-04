@@ -1,0 +1,1 @@
+ALTER TABLE public.cakes ADD COLUMN category text NOT NULL DEFAULT 'everyday';
