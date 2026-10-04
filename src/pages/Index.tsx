@@ -4,7 +4,10 @@ import TopSellers from "@/components/TopSellers";
 import Spotlight from "@/components/Spotlight";
 import Gallery from "@/components/Gallery";
 import CustomCake from "@/components/CustomCake";
+import PriceEstimator from "@/components/PriceEstimator";
 import OurStory from "@/components/OurStory";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -18,7 +21,10 @@ const Index = () => {
       <Spotlight />
       <Gallery />
       <CustomCake />
+      <PriceEstimator />
       <OurStory />
+      <Testimonials />
+      <FAQ />
       <Contact />
       <Footer />
       <WhatsAppButton />
