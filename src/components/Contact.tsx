@@ -1,4 +1,4 @@
-import { MapPin, Clock, Truck } from "lucide-react";
+import { MapPin, Clock, Truck, Store } from "lucide-react";
 import { deliveryZones } from "@/lib/constants";
 
 const Contact = () => {
@@ -22,9 +22,13 @@ const Contact = () => {
               <h3 className="font-display text-xl font-semibold text-foreground">Our Location</h3>
             </div>
             <p className="text-muted-foreground mb-2">123 Cake Lane, Piliyandala, Sri Lanka</p>
-            <div className="flex items-center gap-2 text-muted-foreground mb-6">
+            <div className="flex items-center gap-2 text-muted-foreground mb-4">
               <Clock className="h-4 w-4" />
               <span>Open: Mon - Sat, 9:00 AM - 6:00 PM</span>
+            </div>
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-6">
+              <Store className="h-4 w-4" />
+              Free Pickup at our Piliyandala Studio
             </div>
             
             <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
